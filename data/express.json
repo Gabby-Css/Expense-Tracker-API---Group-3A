@@ -1,0 +1,122 @@
+[
+  {
+    "id": "e354e1d6-7ebc-4b7c-a685-c5526dc31407",
+    "title": "Lunch at campus canteen",
+    "amount": 25.5,
+    "category": "Food",
+    "date": "2026-09-01",
+    "description": "",
+    "createdAt": "now",
+    "updatedAt": "now"
+  },
+  {
+    "id": "5e4a56fa-6fd5-4d36-abbd-e3377d4f7565",
+    "title": "Trotro to Adum",
+    "amount": 8,
+    "category": "Transport",
+    "date": "2026-09-02",
+    "description": "",
+    "createdAt": "now",
+    "updatedAt": "now"
+  },
+  {
+    "id": "992582a0-5961-46b4-a3b1-386061250bc4",
+    "title": "Hostel rent (September)",
+    "amount": 1200,
+    "category": "Housing",
+    "date": "2026-09-03",
+    "description": "",
+    "createdAt": "now",
+    "updatedAt": "now"
+  },
+  {
+    "id": "8cba1f2c-2aba-458a-92b4-01f5b435fa60",
+    "title": "ECG prepaid electricity",
+    "amount": 150,
+    "category": "Utilities",
+    "date": "2026-09-05",
+    "description": "",
+    "createdAt": "now",
+    "updatedAt": "now"
+  },
+  {
+    "id": "3260e986-ce52-4504-99d4-23e1f9c90cb8",
+    "title": "Data bundle",
+    "amount": 50,
+    "category": "Utilities",
+    "date": "2026-09-06",
+    "description": "",
+    "createdAt": "now",
+    "updatedAt": "now"
+  },
+  {
+    "id": "b4274569-bfa9-41b9-90f1-220ab1d45413",
+    "title": "Programming textbook",
+    "amount": 180,
+    "category": "Education",
+    "date": "2026-09-08",
+    "description": "",
+    "createdAt": "now",
+    "updatedAt": "now"
+  },
+  {
+    "id": "e2a7e59c-0762-42bc-8736-ce99ab86738c",
+    "title": "Movie night",
+    "amount": 60,
+    "category": "Entertainment",
+    "date": "2026-09-12",
+    "description": "",
+    "createdAt": "now",
+    "updatedAt": "now"
+  },
+  {
+    "id": "91ea2e97-0d40-4786-9151-604b2f5a5205",
+    "title": "Pharmacy - malaria drugs",
+    "amount": 45,
+    "category": "Health",
+    "date": "2026-09-14",
+    "description": "",
+    "createdAt": "now",
+    "updatedAt": "now"
+  },
+  {
+    "id": "de225e05-64a2-4a30-b0b2-a8b780e627a1",
+    "description": "Weekly shop",
+    "title": "Groceries",
+    "amount": 45.5,
+    "category": "Food",
+    "date": "2026-09-28",
+    "createdAt": "2026-09-28T18:38:23.347Z",
+    "updatedAt": "2026-09-28T18:38:23.347Z"
+  },
+  {
+    "id": "41827286-97a6-47d6-b8b6-5493f4f0d521",
+    "description": "Weekly shop",
+    "title": "Groceries",
+    "amount": 45.5,
+    "category": "Food",
+    "date": "2026-09-28",
+    "createdAt": "2026-09-28T18:38:39.526Z",
+    "updatedAt": "2026-09-28T18:38:39.526Z"
+  },
+  {
+    "id": "134ee48e-ae31-45f0-9b0b-75db40c44eaa",
+    "description": "",
+    "title": "Groceries (updated)",
+    "amount": 50,
+    "category": "Food",
+    "date": "2026-09-28",
+    "createdAt": "2026-09-28T18:41:34.092Z",
+    "updatedAt": "2026-09-28T18:41:34.092Z"
+  },
+  {
+    "id": "e54e15a2-e1d1-40ad-9f98-df9de2cc14c3",
+    "description": "",
+    "title": "Groceries (updated)",
+    "amount": 50,
+    "category": "Food",
+    "date": "2026-09-28",
+    "createdAt": "2026-09-28T18:45:08.145Z",
+    "updatedAt": "2026-09-28T18:45:08.145Z"
+  }
+]
