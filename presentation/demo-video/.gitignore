@@ -1,0 +1,7 @@
+# generated / heavy artefacts
+renders/
+snapshots/
+.hyperframes/
+node_modules/
+# un-normalised voice takes: re-created by `node scripts/make-voice.mjs`
+assets/voice/raw/

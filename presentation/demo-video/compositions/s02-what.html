@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>s02-what</title>
+  </head>
+  <body>
+    <template id="s02-what-template">
+      <style>
+[data-composition-id="s02-what"]{position:absolute;inset:0;overflow:hidden;font-family:"IBM Plex Mono",ui-monospace,monospace;color:#F2EFE4;font-variant-ligatures:none;
+  --bg:#0A2A21;--panel:#0F3B2E;--raised:#134838;--hair:#22604B;--paper:#F2EFE4;--dim:#A9C2B5;--punct:#93B3A3;--gold:#F5B841;--mint:#4AE3A0;--coral:#FF7A6B}
+[data-composition-id="s02-what"] *{box-sizing:border-box;margin:0;padding:0}
+[data-composition-id="s02-what"] .wrap{position:absolute;inset:0}
+[data-composition-id="s02-what"] .disp{font-family:"Archivo Black","IBM Plex Mono",sans-serif;font-weight:400;letter-spacing:-0.02em;text-transform:uppercase}
+[data-composition-id="s02-what"] .hdr{position:absolute;left:80px;right:80px;top:40px;height:44px;display:flex;align-items:center;justify-content:space-between}
+[data-composition-id="s02-what"] .chap{display:flex;gap:18px;align-items:baseline;font-size:22px;letter-spacing:.16em;text-transform:uppercase}
+[data-composition-id="s02-what"] .chap-n{color:var(--gold);font-weight:700}
+[data-composition-id="s02-what"] .chap-t{color:var(--dim)}
+[data-composition-id="s02-what"] .ticks{display:flex;gap:8px}
+[data-composition-id="s02-what"] .tk{display:block;width:16px;height:8px;border-radius:2px;background:rgba(169,194,181,.24)}
+[data-composition-id="s02-what"] .tk.past{background:rgba(169,194,181,.6)}
+[data-composition-id="s02-what"] .tk.on{background:var(--gold)}
+[data-composition-id="s02-what"] .caps{position:absolute;left:80px;right:80px;bottom:40px;height:88px}
+[data-composition-id="s02-what"] .cap{position:absolute;left:0;right:0;top:0;font-size:28px;line-height:40px;color:var(--paper);opacity:0}
+[data-composition-id="s02-what"] .dim{color:var(--dim)}
+[data-composition-id="s02-what"] .gold{color:var(--gold)}
+[data-composition-id="s02-what"] .mint{color:var(--mint)}
+[data-composition-id="s02-what"] .coral{color:var(--coral)}
+
+[data-composition-id="s02-what"] .jp{position:absolute;left:1030px;top:230px;width:810px;height:640px;border-radius:16px;background:var(--panel);border:2px solid var(--hair)}
+[data-composition-id="s02-what"] .jp-h{position:absolute;left:28px;top:24px;font-size:20px;letter-spacing:.16em;color:var(--dim);text-transform:uppercase}
+[data-composition-id="s02-what"] .jl{position:absolute;left:28px;white-space:pre;font-size:26px;line-height:44px;color:var(--paper)}
+[data-composition-id="s02-what"] .jl .k{color:var(--dim)} [data-composition-id="s02-what"] .jl .s{color:var(--paper)} [data-composition-id="s02-what"] .jl .n{color:var(--gold)} [data-composition-id="s02-what"] .jl .p{color:var(--punct)}
+[data-composition-id="s02-what"] .chips{position:absolute;left:80px;top:130px;display:flex;gap:18px}
+[data-composition-id="s02-what"] .chip{border:2px solid var(--hair);border-radius:999px;padding:10px 26px;font-size:28px;color:var(--paper);background:var(--panel);white-space:nowrap}
+[data-composition-id="s02-what"] .chip.hot{border-color:var(--gold);color:var(--gold)}
+[data-composition-id="s02-what"] .card{position:absolute;left:80px;top:230px;width:880px;height:640px;border-radius:16px;background:var(--panel);border:2px solid var(--hair)}
+[data-composition-id="s02-what"] .card-h{position:absolute;left:36px;top:24px;font-size:20px;letter-spacing:.16em;color:var(--dim);text-transform:uppercase}
+[data-composition-id="s02-what"] .fld{position:absolute;left:36px;right:36px;height:104px;border-bottom:1px solid var(--hair)}
+[data-composition-id="s02-what"] .fld-l{position:absolute;left:0;top:18px;font-size:20px;letter-spacing:.16em;color:var(--dim);text-transform:uppercase}
+[data-composition-id="s02-what"] .fld-v{position:absolute;left:0;top:46px;font-size:40px;color:var(--paper);font-weight:700;white-space:nowrap}
+[data-composition-id="s02-what"] .save{position:absolute;left:36px;right:36px;bottom:26px;height:92px;border-radius:12px;background:var(--raised);border:2px dashed var(--gold);display:flex;align-items:center;justify-content:space-between;padding:0 28px;font-size:28px;color:var(--paper)}
+[data-composition-id="s02-what"] .save b{color:var(--gold);font-weight:700;font-size:24px;letter-spacing:.1em}
+[data-composition-id="s02-what"] .vb{position:absolute;left:1030px;width:810px;height:118px;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--hair)}
+[data-composition-id="s02-what"] .vb-n{font-size:78px;color:var(--paper)}
+[data-composition-id="s02-what"] .vb-m{font-family:"IBM Plex Mono",monospace;font-size:28px;color:var(--gold);font-weight:700;letter-spacing:.06em}
+[data-composition-id="s02-what"] .ex{position:absolute;left:1030px;top:770px;display:flex;gap:16px}
+[data-composition-id="s02-what"] .ex span{border:2px solid var(--hair);border-radius:12px;padding:10px 20px;font-size:26px;color:var(--dim);letter-spacing:.06em;background:var(--panel)}
+</style>
+      <div data-hf-id="hf-5ryu" data-composition-id="s02-what" data-width="1920" data-height="1080" data-duration="21.963">
+        <div data-hf-id="hf-710f" class="wrap" id="s02-what-wrap">
+<div data-hf-id="hf-tyyu" class="hdr"><div data-hf-id="hf-j6hi" class="chap"><span data-hf-id="hf-rnco" class="chap-n">02</span><span data-hf-id="hf-gbl1" class="chap-t">What it is</span></div><div data-hf-id="hf-895q" class="ticks"><i data-hf-id="hf-5li5" class="tk past"></i><i data-hf-id="hf-r7oi" class="tk on"></i><i data-hf-id="hf-xi4r" class="tk"></i><i data-hf-id="hf-feqz" class="tk"></i><i data-hf-id="hf-f0fy" class="tk"></i><i data-hf-id="hf-em4x" class="tk"></i><i data-hf-id="hf-e7tw" class="tk"></i><i data-hf-id="hf-dtiv" class="tk"></i><i data-hf-id="hf-df7u" class="tk"></i><i data-hf-id="hf-d0wt" class="tk"></i><i data-hf-id="hf-izi8" class="tk"></i><i data-hf-id="hf-il77" class="tk"></i><i data-hf-id="hf-fupt" class="tk"></i></div></div>
+<div data-hf-id="hf-br8j" class="caps"><div data-hf-id="hf-cwzn" class="cap" id="s02-what-cap0">It's a REST API, built with Node.js and Express.</div><div data-hf-id="hf-aoo4" class="cap" id="s02-what-cap1">Every expense has a title, an amount, a category and a date. It's saved in a simple JSON file, so there's no database to install.</div><div data-hf-id="hf-jx0h" class="cap" id="s02-what-cap2">You can create, read, update and delete expenses, then filter, search and total them up.</div></div>
+
+<div data-hf-id="hf-exrd" class="chips"><span data-hf-id="hf-ttce" class="chip" id="s02-what-chip0">REST API</span><span data-hf-id="hf-vade" class="chip" id="s02-what-chip1">Node.js</span><span data-hf-id="hf-5pgm" class="chip" id="s02-what-chip2">Express</span><span data-hf-id="hf-6viu" class="chip hot" id="s02-what-chip3">JSON file</span></div>
+<div data-hf-id="hf-6n2b" class="card" id="s02-what-card">
+  <div data-hf-id="hf-pfj7" class="card-h">one expense</div>
+  <div data-hf-id="hf-lo71" class="fld" id="s02-what-f0" style="top:70px"><div data-hf-id="hf-ekl9" class="fld-l">title</div><div data-hf-id="hf-1at9" class="fld-v">Lunch at campus canteen</div></div><div data-hf-id="hf-p8mh" class="fld" id="s02-what-f1" style="top:174px"><div data-hf-id="hf-l0e5" class="fld-l">amount</div><div data-hf-id="hf-2c9d" class="fld-v">25.50</div></div><div data-hf-id="hf-h5dx" class="fld" id="s02-what-f2" style="top:278px"><div data-hf-id="hf-o2q5" class="fld-l">category</div><div data-hf-id="hf-6437" class="fld-v"><i data-hf-id="hf-w7zg" style="display:inline-block;width:18px;height:18px;border-radius:50%;background:#F5B841;margin-right:14px"></i>Food</div></div><div data-hf-id="hf-1hbu" class="fld" id="s02-what-f3" style="top:382px"><div data-hf-id="hf-lq0d" class="fld-l">date</div><div data-hf-id="hf-vs91" class="fld-v">2026-09-01</div></div>
+  <div data-hf-id="hf-tm19" class="save" id="s02-what-save"><span data-hf-id="hf-1al7">-&gt; data/express.json</span><b data-hf-id="hf-6ol7">NO DATABASE TO INSTALL</b></div>
+</div>
+<div data-hf-id="hf-leoj" class="jp" id="s02-what-jp"><div data-hf-id="hf-yyck" class="jp-h">as saved in data/express.json</div><div data-hf-id="hf-uvp9" class="jl" id="s02-what-jl0" style="top:76px"><span data-hf-id="hf-jjhw" class="p">{</span></div><div data-hf-id="hf-l56q" class="jl" id="s02-what-jl1" style="top:122px">  <span data-hf-id="hf-squv" class="k">"id"</span><span data-hf-id="hf-tpl3" class="p">: </span><span data-hf-id="hf-nh5p" class="s">"92047833-9641-4a8d-b8a0-1908c52ec0f7"</span><span data-hf-id="hf-0v3l" class="p">,</span></div><div data-hf-id="hf-9zuj" class="jl" id="s02-what-jl2" style="top:168px">  <span data-hf-id="hf-svsi" class="k">"title"</span><span data-hf-id="hf-rq3r" class="p">: </span><span data-hf-id="hf-jac4" class="s">"Lunch at campus canteen"</span><span data-hf-id="hf-cqqt" class="p">,</span></div><div data-hf-id="hf-npxk" class="jl" id="s02-what-jl3" style="top:214px">  <span data-hf-id="hf-tnic" class="k">"amount"</span><span data-hf-id="hf-rbsq" class="p">: </span><span data-hf-id="hf-by15" class="n">25.5</span><span data-hf-id="hf-hzn0" class="p">,</span></div><div data-hf-id="hf-bp6q" class="jl" id="s02-what-jl4" style="top:260px">  <span data-hf-id="hf-p31k" class="k">"category"</span><span data-hf-id="hf-qxhp" class="p">: </span><span data-hf-id="hf-g388" class="s">"Food"</span><span data-hf-id="hf-hlbz" class="p">,</span></div><div data-hf-id="hf-wc7y" class="jl" id="s02-what-jl5" style="top:306px">  <span data-hf-id="hf-y2x8" class="k">"date"</span><span data-hf-id="hf-tpmw" class="p">: </span><span data-hf-id="hf-0sla" class="s">"2026-09-01"</span><span data-hf-id="hf-is92" class="p">,</span></div><div data-hf-id="hf-7yfa" class="jl" id="s02-what-jl6" style="top:352px">  <span data-hf-id="hf-ow9u" class="k">"description"</span><span data-hf-id="hf-tbbv" class="p">: </span><span data-hf-id="hf-ebxk" class="s">""</span><span data-hf-id="hf-idy1" class="p">,</span></div><div data-hf-id="hf-oxzh" class="jl" id="s02-what-jl7" style="top:398px">  <span data-hf-id="hf-kjk3" class="k">"createdAt"</span><span data-hf-id="hf-sx0u" class="p">: </span><span data-hf-id="hf-vcdm" class="s">"2026-09-30T12:53:48.337Z"</span><span data-hf-id="hf-jkv4" class="p">,</span></div><div data-hf-id="hf-r5z6" class="jl" id="s02-what-jl8" style="top:444px">  <span data-hf-id="hf-5z9y" class="k">"updatedAt"</span><span data-hf-id="hf-sipt" class="p">: </span><span data-hf-id="hf-338u" class="s">"2026-09-30T12:53:48.337Z"</span></div><div data-hf-id="hf-2vyw" class="jl" id="s02-what-jl9" style="top:490px"><span data-hf-id="hf-kc3y" class="p">}</span></div></div>
+<div data-hf-id="hf-5lr9" class="vb disp" id="s02-what-v0" style="top:230px"><span data-hf-id="hf-1r48" class="vb-n">CREATE</span><span data-hf-id="hf-dojt" class="vb-m">POST</span></div><div data-hf-id="hf-rz57" class="vb disp" id="s02-what-v1" style="top:358px"><span data-hf-id="hf-b2uo" class="vb-n">READ</span><span data-hf-id="hf-9nm9" class="vb-m">GET</span></div><div data-hf-id="hf-zx3a" class="vb disp" id="s02-what-v2" style="top:486px"><span data-hf-id="hf-0t0d" class="vb-n">UPDATE</span><span data-hf-id="hf-1zk7" class="vb-m">PUT / PATCH</span></div><div data-hf-id="hf-x2c4" class="vb disp" id="s02-what-v3" style="top:614px"><span data-hf-id="hf-czkn" class="vb-n">DELETE</span><span data-hf-id="hf-j5o4" class="vb-m">DELETE</span></div>
+<div data-hf-id="hf-ty65" class="ex" id="s02-what-ex"><span data-hf-id="hf-hapq" id="s02-what-ex0">FILTER</span><span data-hf-id="hf-xgcp" id="s02-what-ex1">SEARCH</span><span data-hf-id="hf-ilqu" id="s02-what-ex2">SORT</span><span data-hf-id="hf-cd27" id="s02-what-ex3">TOTAL</span></div>
+        </div>
+        <script>
+          (function () {
+            const SID = "s02-what";
+            const tl = gsap.timeline({ paused: true });
+            tl.fromTo(document.getElementById("s02-what-wrap"), { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 0);
+            tl.to(document.getElementById("s02-what-wrap"), { opacity: 0, duration: 0.4, ease: "power2.in" }, 21.543);
+            tl.fromTo(document.getElementById("s02-what-cap0"),{opacity:0,y:8},{opacity:1,y:0,duration:.22,ease:'power2.out'},0.680); tl.to(document.getElementById("s02-what-cap0"),{opacity:0,duration:.18,ease:'power1.in'},4.708); tl.fromTo(document.getElementById("s02-what-cap1"),{opacity:0,y:8},{opacity:1,y:0,duration:.22,ease:'power2.out'},5.098); tl.to(document.getElementById("s02-what-cap1"),{opacity:0,duration:.18,ease:'power1.in'},14.993); tl.fromTo(document.getElementById("s02-what-cap2"),{opacity:0,y:8},{opacity:1,y:0,duration:.22,ease:'power2.out'},15.383);
+            tl.to(document.getElementById("s02-what-cap2"),{opacity:0,duration:.18,ease:'power1.in'},21.203); tl.fromTo(document.getElementById("s02-what-chip0"),{"opacity":0,"y":16,"scale":0.92},{"opacity":1,"y":0,"scale":1,"duration":0.45,"ease":"power3.out"},1.414); tl.fromTo(document.getElementById("s02-what-chip1"),{"opacity":0,"y":16,"scale":0.92},{"opacity":1,"y":0,"scale":1,"duration":0.45,"ease":"power3.out"},2.208); tl.fromTo(document.getElementById("s02-what-chip2"),{"opacity":0,"y":16,"scale":0.92},{"opacity":1,"y":0,"scale":1,"duration":0.45,"ease":"power3.out"},3.001); tl.fromTo(document.getElementById("s02-what-card"),{"opacity":0,"y":24},{"opacity":1,"y":0,"duration":0.5,"ease":"power3.out"},5.315);
+            tl.fromTo(document.getElementById("s02-what-f0"),{"opacity":0,"x":-24},{"opacity":1,"x":0,"duration":0.45,"ease":"power3.out"},6.102); tl.fromTo(document.getElementById("s02-what-f1"),{"opacity":0,"x":-24},{"opacity":1,"x":0,"duration":0.45,"ease":"power3.out"},7.675); tl.fromTo(document.getElementById("s02-what-f2"),{"opacity":0,"x":-24},{"opacity":1,"x":0,"duration":0.45,"ease":"power3.out"},9.249); tl.fromTo(document.getElementById("s02-what-f3"),{"opacity":0,"x":-24},{"opacity":1,"x":0,"duration":0.45,"ease":"power3.out"},10.626); tl.fromTo(document.getElementById("s02-what-chip3"),{"opacity":0,"y":16,"scale":0.92},{"opacity":1,"y":0,"scale":1,"duration":0.45,"ease":"power3.out"},11.609);
+            tl.fromTo(document.getElementById("s02-what-save"),{"opacity":0,"y":20},{"opacity":1,"y":0,"duration":0.5,"ease":"power3.out"},12.396); tl.fromTo(document.getElementById("s02-what-jp"),{"opacity":0,"x":40},{"opacity":1,"x":0,"duration":0.5,"ease":"power3.out"},5.708); tl.fromTo(document.getElementById("s02-what-jl0"),{"opacity":0,"y":8},{"opacity":1,"y":0,"duration":0.35,"ease":"power2.out"},5.905); tl.fromTo(document.getElementById("s02-what-jl1"),{"opacity":0,"y":8},{"opacity":1,"y":0,"duration":0.35,"ease":"power2.out"},12.396); tl.fromTo(document.getElementById("s02-what-jl2"),{"opacity":0,"y":8},{"opacity":1,"y":0,"duration":0.35,"ease":"power2.out"},6.102);
+            tl.fromTo(document.getElementById("s02-what-jl3"),{"opacity":0,"y":8},{"opacity":1,"y":0,"duration":0.35,"ease":"power2.out"},7.675); tl.fromTo(document.getElementById("s02-what-jl4"),{"opacity":0,"y":8},{"opacity":1,"y":0,"duration":0.35,"ease":"power2.out"},9.249); tl.fromTo(document.getElementById("s02-what-jl5"),{"opacity":0,"y":8},{"opacity":1,"y":0,"duration":0.35,"ease":"power2.out"},10.626); tl.fromTo(document.getElementById("s02-what-jl6"),{"opacity":0,"y":8},{"opacity":1,"y":0,"duration":0.35,"ease":"power2.out"},12.789); tl.fromTo(document.getElementById("s02-what-jl7"),{"opacity":0,"y":8},{"opacity":1,"y":0,"duration":0.35,"ease":"power2.out"},13.183);
+            tl.fromTo(document.getElementById("s02-what-jl8"),{"opacity":0,"y":8},{"opacity":1,"y":0,"duration":0.35,"ease":"power2.out"},13.576); tl.fromTo(document.getElementById("s02-what-jl9"),{"opacity":0,"y":8},{"opacity":1,"y":0,"duration":0.35,"ease":"power2.out"},5.905); tl.to(document.getElementById("s02-what-jp"),{"opacity":0,"x":30,"duration":0.3,"ease":"power2.in"},15.083); tl.fromTo(document.getElementById("s02-what-v0"),{"opacity":0,"x":60},{"opacity":1,"x":0,"duration":0.5,"ease":"power3.out"},15.691); tl.fromTo(document.getElementById("s02-what-v1"),{"opacity":0,"x":60},{"opacity":1,"x":0,"duration":0.5,"ease":"power3.out"},16.497);
+            tl.fromTo(document.getElementById("s02-what-v2"),{"opacity":0,"x":60},{"opacity":1,"x":0,"duration":0.5,"ease":"power3.out"},17.131); tl.fromTo(document.getElementById("s02-what-v3"),{"opacity":0,"x":60},{"opacity":1,"x":0,"duration":0.5,"ease":"power3.out"},17.822); tl.fromTo(document.getElementById("s02-what-ex0"),{"opacity":0,"y":14},{"opacity":1,"y":0,"duration":0.35,"ease":"power2.out"},18.629); tl.fromTo(document.getElementById("s02-what-ex1"),{"opacity":0,"y":14},{"opacity":1,"y":0,"duration":0.35,"ease":"power2.out"},19.320); tl.fromTo(document.getElementById("s02-what-ex2"),{"opacity":0,"y":14},{"opacity":1,"y":0,"duration":0.35,"ease":"power2.out"},20.011);
+            tl.fromTo(document.getElementById("s02-what-ex3"),{"opacity":0,"y":14},{"opacity":1,"y":0,"duration":0.35,"ease":"power2.out"},20.587);
+            window.__timelines[SID] = tl;
+          })();
+        </script>
+      </div>
+    </template>
+  </body>
+</html>

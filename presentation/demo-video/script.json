@@ -1,0 +1,284 @@
+{
+  "voice": "af_heart",
+  "speed": 0.9,
+  "scenes": [
+    {
+      "id": "s01-hook",
+      "chapter": "Hook",
+      "beats": [
+        {
+          "id": "01a",
+          "say": "Where did your money go this month?",
+          "show": "Where did your money go this month?"
+        },
+        {
+          "id": "01b",
+          "say": "Most students can't say. So our group built an A P I that keeps the books for you.",
+          "show": "Most students can't say. So our group built an API that keeps the books for you."
+        },
+        {
+          "id": "01c",
+          "say": "This is the Group three A Expense Tracker.",
+          "show": "This is the Group 3A Expense Tracker."
+        }
+      ]
+    },
+    {
+      "id": "s02-what",
+      "chapter": "What it is",
+      "beats": [
+        {
+          "id": "02a",
+          "say": "It's a REST A P I, built with Node dot J S and Express.",
+          "show": "It's a REST API, built with Node.js and Express."
+        },
+        {
+          "id": "02b",
+          "say": "Every expense has a title, an amount, a category and a date. It's saved in a simple J S O N file, so there's no database to install.",
+          "show": "Every expense has a title, an amount, a category and a date. It's saved in a simple JSON file, so there's no database to install."
+        },
+        {
+          "id": "02c",
+          "say": "You can create, read, update and delete expenses, then filter, search and total them up.",
+          "show": "You can create, read, update and delete expenses, then filter, search and total them up."
+        }
+      ]
+    },
+    {
+      "id": "s03-flow",
+      "chapter": "How it works",
+      "beats": [
+        {
+          "id": "03a",
+          "say": "Here's how a request travels through our code.",
+          "show": "Here's how a request travels through our code."
+        },
+        {
+          "id": "03b",
+          "say": "It hits a route, passes validation, and the controller does the work.",
+          "show": "It hits a route, passes validation, and the controller does the work."
+        },
+        {
+          "id": "03c",
+          "say": "The data layer reads or writes the file, and every answer comes back as clean J S O N.",
+          "show": "The data layer reads or writes the file, and every answer comes back as clean JSON."
+        }
+      ]
+    },
+    {
+      "id": "s04-run",
+      "chapter": "Run it",
+      "beats": [
+        {
+          "id": "04a",
+          "say": "Let's run it. After N P M install, we load eight sample expenses with N P M run seed.",
+          "show": "Let's run it. After npm install, we load eight sample expenses with npm run seed."
+        },
+        {
+          "id": "04b",
+          "say": "Then N P M start, and the server is listening on port three thousand.",
+          "show": "Then npm start, and the server is listening on port 3000."
+        }
+      ]
+    },
+    {
+      "id": "s05-create",
+      "chapter": "Create",
+      "beats": [
+        {
+          "id": "05a",
+          "say": "First, a health check. The server says: status okay.",
+          "show": "First, a health check. The server says: status ok."
+        },
+        {
+          "id": "05b",
+          "say": "Now Create. We post a new expense: group project printing, thirty five, in the Education category.",
+          "show": "Now Create. We POST a new expense: group project printing, 35, in the Education category."
+        },
+        {
+          "id": "05c",
+          "say": "The server answers two oh one, Created, and gives the expense its own unique I D.",
+          "show": "The server answers 201 Created, and gives the expense its own unique ID."
+        },
+        {
+          "id": "05d",
+          "say": "And there it is: a new row in the ledger.",
+          "show": "And there it is: a new row in the ledger."
+        }
+      ]
+    },
+    {
+      "id": "s06-read",
+      "chapter": "Read",
+      "beats": [
+        {
+          "id": "06a",
+          "say": "Now Read. Get expenses returns the list, newest first, with the total amount and paging built in.",
+          "show": "Now Read. GET expenses returns the list, newest first, with the total amount and paging built in."
+        },
+        {
+          "id": "06b",
+          "say": "Ask for one expense by its I D, and you get exactly that one.",
+          "show": "Ask for one expense by its ID, and you get exactly that one."
+        },
+        {
+          "id": "06c",
+          "say": "You can also filter. Here, only Education expenses, sorted by amount, biggest first.",
+          "show": "You can also filter. Here, only Education expenses, sorted by amount, biggest first."
+        },
+        {
+          "id": "06d",
+          "say": "You can also search by text, and add date ranges or amount ranges.",
+          "show": "You can also search by text, and add date ranges or amount ranges."
+        },
+        {
+          "id": "06e",
+          "say": "And a categories endpoint tells clients which values are allowed.",
+          "show": "And a categories endpoint tells clients which values are allowed."
+        }
+      ]
+    },
+    {
+      "id": "s07-update",
+      "chapter": "Update",
+      "beats": [
+        {
+          "id": "07a",
+          "say": "Update comes in two flavours. Patch changes only the fields you send.",
+          "show": "Update comes in two flavours. PATCH changes only the fields you send."
+        },
+        {
+          "id": "07b",
+          "say": "Here we correct the amount to forty two point five.",
+          "show": "Here we correct the amount to 42.5."
+        },
+        {
+          "id": "07c",
+          "say": "Put replaces the whole expense. We rename it, and set the amount to sixty.",
+          "show": "PUT replaces the whole expense. We rename it, and set the amount to 60."
+        },
+        {
+          "id": "07d",
+          "say": "Either way, updated at changes, and created at stays put.",
+          "show": "Either way, updatedAt changes, and createdAt stays put."
+        }
+      ]
+    },
+    {
+      "id": "s08-delete",
+      "chapter": "Delete",
+      "beats": [
+        {
+          "id": "08a",
+          "say": "Delete removes the expense, and the row leaves the ledger.",
+          "show": "DELETE removes the expense, and the row leaves the ledger."
+        },
+        {
+          "id": "08b",
+          "say": "Ask for it again, and the A P I answers four oh four: not found, with a clear message.",
+          "show": "Ask for it again, and the API answers 404: not found, with a clear message."
+        }
+      ]
+    },
+    {
+      "id": "s09-summary",
+      "chapter": "Summary",
+      "beats": [
+        {
+          "id": "09a",
+          "say": "The summary endpoint does the bookkeeping.",
+          "show": "The summary endpoint does the bookkeeping."
+        },
+        {
+          "id": "09b",
+          "say": "It returns the total spent, the number of expenses, the average, and a breakdown by category.",
+          "show": "It returns the total spent, the number of expenses, the average, and a breakdown by category."
+        },
+        {
+          "id": "09c",
+          "say": "Unsurprisingly, Housing is the big one.",
+          "show": "Unsurprisingly, Housing is the big one."
+        }
+      ]
+    },
+    {
+      "id": "s10-invalid",
+      "chapter": "Bad input",
+      "beats": [
+        {
+          "id": "10a",
+          "say": "What about bad input? We send an empty title, a negative amount, an unknown category, and a date that doesn't exist.",
+          "show": "What about bad input? We send an empty title, a negative amount, an unknown category, and a date that doesn't exist."
+        },
+        {
+          "id": "10b",
+          "say": "The A P I doesn't crash, and it doesn't guess. It answers four hundred, and lists every problem at once.",
+          "show": "The API doesn't crash, and it doesn't guess. It answers 400, and lists every problem at once."
+        },
+        {
+          "id": "10c",
+          "say": "Broken J S O N, or a route that doesn't exist, gets a clear error too.",
+          "show": "Broken JSON, or a route that doesn't exist, gets a clear error too."
+        }
+      ]
+    },
+    {
+      "id": "s11-tests",
+      "chapter": "Tests",
+      "beats": [
+        {
+          "id": "11a",
+          "say": "We don't trust it by eye. Fifteen automated tests cover every endpoint, including the failures.",
+          "show": "We don't trust it by eye. Fifteen automated tests cover every endpoint, including the failures."
+        },
+        {
+          "id": "11b",
+          "say": "They run in about two seconds with N P M test.",
+          "show": "They run in about two seconds with npm test."
+        },
+        {
+          "id": "11c",
+          "say": "All fifteen pass.",
+          "show": "All fifteen pass."
+        }
+      ]
+    },
+    {
+      "id": "s12-team",
+      "chapter": "The team",
+      "beats": [
+        {
+          "id": "12a",
+          "say": "And we built it as a team of thirteen.",
+          "show": "And we built it as a team of thirteen."
+        },
+        {
+          "id": "12b",
+          "say": "Each member owned one part: setup, the data layer, validation, the controller, routes, tests, and documentation.",
+          "show": "Each member owned one part: setup, the data layer, validation, the controller, routes, tests, and documentation."
+        },
+        {
+          "id": "12c",
+          "say": "Everyone pushed their work to GitHub as their own commits, merged in order, so each part built on the last.",
+          "show": "Everyone pushed their work to GitHub as their own commits, merged in order, so each part built on the last."
+        }
+      ]
+    },
+    {
+      "id": "s13-close",
+      "chapter": "Wrap-up",
+      "beats": [
+        {
+          "id": "13a",
+          "say": "That's the Expense Tracker A P I: full CRUD, filters, a summary, validation, and fifteen passing tests.",
+          "show": "That's the Expense Tracker API: full CRUD, filters, a summary, validation, and fifteen passing tests."
+        },
+        {
+          "id": "13b",
+          "say": "The code is on GitHub. Thank you for watching, and we'd love your questions.",
+          "show": "The code is on GitHub. Thank you for watching, and we'd love your questions."
+        }
+      ]
+    }
+  ]
+}
